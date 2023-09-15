@@ -10,23 +10,24 @@
 
     <div id="wrapper" class="h-screen w-screen flex justify-center items-center">
         <!-- Main container -->
-       <div class="main_container max-w-[1080px] w-1/2 h-[80vh] flex flex-col " >
+       <div class="main_container max-w-[1080px] w-1/2 h-[90vh] flex flex-col gap-7 " >
         <!-- Heading -->
         <div class="heading w-full flex justify-between items-center">
-            <p> DEV DETACTIVE</p>
-            <div class="flex gap-2">
-                <p class=" ">LIGHT</p>
+            <p class="text-4xl"> DEV DETACTIVE</p>
+            <div class="flex gap-2 items-center">
+                <p class="text-xl ">LIGHT</p>
                 <img class= "h-6 w-6" src="./assets/images/moon-icon.svg" alt="">
             </div>
         </div>
-        <div class="search">
-            <input type="text">
-            <p></p>
-            <button>SEARCH</button>
+        <div class="search_tab relative flex w-full items-center px-4 h-20">
+            <img class="absolute" src="./assets/images/search-icon.svg" alt="">
+            <input id="search" class="search w-full pl-9 text-xl border-white outline-none" type="text" placeholder="Enter the GitHub username...">
+            <p class="not_found absolute right-28 opacity-0 ">User Not Found</p>
+            <button class="search_btn absolute text-white right-0 mr-4 bg-[#0079ff] px-4 py-2 rounded-md">SEARCH</button>
         </div>
-        <div class="containt">
+        <div class="content w-full h-full ">
             <div>
-                <img src="" alt="">
+                <img height="80px" width="80px" class="avatar" src="#" alt="">
                 <div>
                     <p class="username"></p>
                     <p class="joined"></p>
@@ -39,29 +40,29 @@
             <div class="user_data">
                 <div class="following">
                     <p class="data"></p>
-                    <p class="number"></p>
+                    <p class="following_number"></p>
                 </div>
                 <div class="follower">
                     <p class="data"></p>
-                    <p class="number"></p>
+                    <p class="follower_number"></p>
                 </div>
                 <div class="repo">
                     <p class="data"></p>
-                    <p class="number"></p>
+                    <p class="repo_number"></p>
                 </div>
             </div>
             <div>
                 <div><img src="" alt="">
-                    <p></p>              
+                    <p class="location"></p>              
                 </div>
                 <div><img src="" alt="">
-                    <p></p>              
+                    <p class="link"></p>              
                 </div>
                 <div><img src="" alt="">
-                    <p></p>              
+                    <p class="twitter"></p>              
                 </div>
                 <div><img src="" alt="">
-                    <p></p>              
+                    <p class="company"></p>              
                 </div>
             </div>
             </div>

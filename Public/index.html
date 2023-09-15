@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +8,61 @@
 </head>
 <body>
 
-    <div id="wrapper" class="h-screen w-screen flex justify-center items-center">
+    <div id="wrapper" class="h-screen w-screen flex justify-center items-center dark:bg-[#141d2f]">
         <!-- Main container -->
-       <div class="main_container max-w-[1080px] w-1/2 h-[90vh] flex flex-col gap-7 " >
+       <div class="main_container   max-w-3xl w-11/12 h-[90vh] flex flex-col gap-7 " >
         <!-- Heading -->
         <div class="heading w-full flex justify-between items-center">
-            <p class="text-4xl"> DEV DETACTIVE</p>
-            <div class="flex gap-2 items-center">
+            <p class="text-4xl dark:text-white"> DEV DETACTIVE</p>
+            <!-- <div class="flex gap-2 items-center">
                 <p class="text-xl ">LIGHT</p>
                 <img class= "h-6 w-6" src="./assets/images/moon-icon.svg" alt="">
-            </div>
+            </div> -->
         </div>
-        <div class="search_tab relative flex w-full items-center px-4 h-20">
+        <div class="search_tab relative dark:bg-[#1e2a47] flex w-full items-center px-4 h-20">
             <img class="absolute" src="./assets/images/search-icon.svg" alt="">
-            <input id="search" class="search w-full pl-9 text-xl border-white outline-none" type="text" placeholder="Enter the GitHub username...">
-            <p class="not_found absolute right-28 opacity-0 ">User Not Found</p>
+            <input id="search" class="search w-full pl-9 text-xl dark:text-white border-white outline-none dark:bg-[#1e2a47]" type="text" placeholder="Enter the GitHub username...">
+            <p class="not_found absolute lg:right-28 hidden right-2 lg:-top-0 -top-5 text-red-600">User Not Found</p>
             <button class="search_btn absolute text-white right-0 mr-4 bg-[#0079ff] px-4 py-2 rounded-md">SEARCH</button>
         </div>
-        <div class="content w-full h-full ">
-            <div>
-                <img height="80px" width="80px" class="avatar" src="#" alt="">
-                <div>
-                    <p class="username"></p>
-                    <p class="joined"></p>
+        <div class="content w-full h-[75%] dark:bg-[#1e2a47]  ">
+            <div class="flex mt-9 ml-8 w-full ">
+                <img  class="avatar rounded-full lg:h-32 lg:w-32 h-24 w-24 " src="#" alt="">
+                <div class=" flex w-2/4 ml-10 flex-col">
+                    <p class="username text-black text-xl lg:text-2xl dark:text-white"></p>
+                    <a href="#" target="_blank"  class="user_link text-sm lg:text-base left-36 top-4"></a>
                 </div>
-                <div class="user_link"></div>
+                <p class="joined absolute lg:relative left-48 mt-12 lg:left-0 lg:mt-0 dark:text-white"></p>
             </div>
-            <div>
+            <div class=" w-full mt-6 p-2 lg:mt-0 lg:p-0 lg:w-[75%] lg:ml-[25%] flex flex-col gap-12">
 
-                <p class="desc"></p>
-            <div class="user_data">
+                <p class="desc dark:text-slate-200"></p>
+            <div class="user_data flex justify-between dark:bg-[#141d2f] rounded-lg p-4 lg:mr-3 lg:gap-36 bg-[#f6f8ff] h-20 items-center">
                 <div class="following">
-                    <p class="data"></p>
-                    <p class="following_number"></p>
+                    <p class="data dark:text-white">Repos</p>
+                    <p class="repo_number text-black text-3xl dark:text-white"></p>
                 </div>
                 <div class="follower">
-                    <p class="data"></p>
-                    <p class="follower_number"></p>
+                    <p class="data dark:text-white">Follower</p>
+                    <p class="follower_number text-black text-3xl dark:text-white"></p>
                 </div>
                 <div class="repo">
-                    <p class="data"></p>
-                    <p class="repo_number"></p>
+                    <p class="data dark:text-white">Following</p>
+                    <p class="following_number text-black text-3xl dark:text-white"></p>
                 </div>
             </div>
-            <div>
-                <div><img src="" alt="">
-                    <p class="location"></p>              
+            <div class=" flex flex-col gap-6 lg:grid grid-cols-2 grid-rows-2 lg:gap-3 mb-4">
+                <div class="flex gap-3 items-center"><img class="h-8 w-5" src="./assets/images/location-icon.svg" alt="">
+                    <p class="location dark:text-white"></p>              
                 </div>
-                <div><img src="" alt="">
-                    <p class="link"></p>              
+                <div class="flex gap-3 items-center"><img class="h-5 w-5" src="./assets/images/website-icon.svg" alt="">
+                    <p class="link dark:text-white"></p>              
                 </div>
-                <div><img src="" alt="">
-                    <p class="twitter"></p>              
+                <div class="flex gap-3 items-center" ><img src="./assets/images/twitter-icon.svg" alt="">
+                    <p class="twitter dark:text-white"></p>              
                 </div>
-                <div><img src="" alt="">
-                    <p class="company"></p>              
+                <div class="flex gap-3 items-center"><img src="./assets/images/company-icon.svg" alt="">
+                    <p class="company dark:text-white"></p>              
                 </div>
             </div>
             </div>
